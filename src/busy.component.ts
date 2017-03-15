@@ -29,7 +29,7 @@ export interface IBusyContext {
     selector: 'ng-busy',
     template: `
         <div [class]="wrapperClass" *ngIf="isActive()" @flyInOut>
-            <DynamicComponent [componentTemplate]="template" [componentContext]="context">
+            <DynamicComponent [componentTemplate]="template" [componentContext]="{contextValue: 100500}">
             </DynamicComponent>
         </div>
     `,
